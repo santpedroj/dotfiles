@@ -51,7 +51,7 @@ alias lgit="lazygit"
 # =========================================================
 
 alias fastfetch='/usr/bin/fastfetch -c ~/.config/fastfetch/config.jsonc'
-alias fastfetch='/usr/bin/fastfetch --logo fedora_small -c ~/.config/fastfetch/config.jsonc'
+#alias fastfetch='/usr/bin/fastfetch -l fedora_small -c ~/.config/fastfetch/config.jsonc'
 
 # =========================================================
 # Distrobox
