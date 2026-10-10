@@ -11,7 +11,7 @@ export XDG_SESSION_TYPE=wayland
 # qt
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export QT_QPA_PLATFORM="wayland;xcb"
-export QT_QPA_PLATFORMTHEME="gtk3"
+export QT_QPA_PLATFORMTHEME="qt6ct"
 # fix to ghostty
 export GTK_IM_MODULE=simple
 # hyprland-qt-support
