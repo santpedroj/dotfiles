@@ -1,6 +1,6 @@
 command = /bin/zsh
 
-theme = Kanagawa Wave
+theme = Gruvbox Material Dark 
 font-size = 19
 mouse-hide-while-typing = true
 
