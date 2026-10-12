@@ -2,7 +2,7 @@
 require("config.lazy")
 
 -- colorscheme
-vim.cmd.colorscheme("gruvbox-material")
+vim.cmd.colorscheme("kanagawa-wave")
 
 -- line
 vim.opt.wrap = true
