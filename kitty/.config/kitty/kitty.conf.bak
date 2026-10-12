@@ -15,10 +15,10 @@ map shift+right move_window right
 #: characters.
 
 # BEGIN_KITTY_FONTS
-font_family      family='JetBrainsMono Nerd Font' postscript_name=JetBrainsMonoNF-Regular
-bold_font        family='JetBrainsMono Nerd Font' postscript_name=JetBrainsMonoNF-Bold
-italic_font      family='JetBrainsMono Nerd Font' style=Italic
-bold_italic_font family='JetBrainsMono Nerd Font' postscript_name=JetBrainsMonoNF-BoldItalic
+font_family      family="JetBrainsMono Nerd Font"
+bold_font        family='JetBrainsMono Nerd Font' style=Bold
+italic_font      auto
+bold_italic_font family='JetBrainsMono Nerd Font' style='Bold Italic'
 # END_KITTY_FONTS
 
 #: You can specify different fonts for the bold/italic/bold-italic
@@ -30,7 +30,7 @@ bold_italic_font family='JetBrainsMono Nerd Font' postscript_name=JetBrainsMonoN
 #: <https://sw.kovidgoyal.net/kitty/kittens/choose-fonts/#font-spec-
 #: syntax>.
 
-font_size 17.0
+font_size 19.0
 
 #: Font size (in pts).
 
@@ -3007,6 +3007,6 @@ map kitty_mod+f5 load_config_file
 
 
 # BEGIN_KITTY_THEME
-# Kanagawa_dragon
+# Kanagawa
 include current-theme.conf
 # END_KITTY_THEME
