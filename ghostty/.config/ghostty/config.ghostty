@@ -1,15 +1,10 @@
 command = /bin/zsh
 
 theme = Gruvbox Material Dark 
-font-size = 19
+font-size = 17
 mouse-hide-while-typing = true
 
 cursor-style-blink = false
-
-window-width = 140
-window-height = 40
-window-decoration = none
-window-show-tab-bar = auto
 
 quit-after-last-window-closed = false
 quit-after-last-window-closed-delay = 5m
