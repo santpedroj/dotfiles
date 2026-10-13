@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=LocalSend
-Comment=Share files to nearby devices.
-Exec=flatpak run org.localsend.localsend_app --hidden
-Icon=org.localsend.localsend_app
-Terminal=false
-Categories=Utility;
