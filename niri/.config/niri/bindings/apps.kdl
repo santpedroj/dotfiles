@@ -3,19 +3,11 @@ binds {
 Mod+Shift+Slash { show-hotkey-overlay; }
 
 // default applications
-Mod+E { spawn "thunar"; }
-Mod+T { spawn "zeditor"; }
-Mod+B { spawn "brave-origin"; }
-Mod+Return hotkey-overlay-title="Open a Terminal: kitty" {
-    spawn "kitty";
-}
+Mod+E hotkey-overlay-title="File Manager" { spawn "thunar"; }
+Mod+Shift+E hotkey-overlay-title="File Manager (floating)" { spawn "thunar" "--name=dfr.floating.thunar"; }
+Mod+T hotkey-overlay-title="File Manager" { spawn "zed"; }
+Mod+B hotkey-overlay-title="Browser" { spawn "brave-origin"; }
+Mod+Return hotkey-overlay-title="Terminal" { spawn "kitty"; }
 
-//Ctrl+Shift+S { spawn "flameshot" "gui"; }
-//
 //Mod+P { spawn "hyprpicker" "-a"; }
-//
-//Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" {
-//    spawn "hyprlock";
-//}
-
 }
