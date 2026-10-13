@@ -1,9 +1,0 @@
-[General]
-ColorScheme=BreezeDark
-Name=Breeze Dark
-
-[Icons]
-Theme=breeze-dark
-
-[KDE]
-widgetStyle=qt6ct-style
