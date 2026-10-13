@@ -42,11 +42,20 @@ window-rule {
 window-rule {
     match app-id=r#"^Pinentry-gtk$"#
     match app-id=r#"^mpv$"#
-    match app-id=r#"^Thunar$"# title=r#"^Rename "#
+    match app-id=r#"^thunar$"# title=r#"^Rename "#
     match app-id=r#"^org\.gnome\.FileRoller$"# title="^Extract"
     match app-id=r#"firefox$"# title=r#"^(Picture-in-Picture|Library|About Mozilla Firefox|Firefox - Choose a profile)$"#
 
     open-floating true
+}
+
+window-rule {
+    match app-id=r#"^dfr\.floating\.ghostty$"#
+    match app-id=r#"^dfr\.floating\.thunar$"#
+
+    open-floating true
+    default-column-width { proportion 0.33; }
+    default-window-height { proportion 0.5; }
 }
 
 // Open KDE Connect as a small floating windows.
