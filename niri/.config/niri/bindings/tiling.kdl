@@ -4,11 +4,6 @@ binds {
     Mod+Q repeat=false { close-window; }
 
     // Focus
-    Mod+Left  { focus-column-left; }
-    Mod+Down  { focus-window-down; }
-    Mod+Up    { focus-window-up; }
-    Mod+Right { focus-column-right; }
-
     Mod+H { focus-column-left; }
     Mod+J { focus-window-down; }
     Mod+K { focus-window-up; }
@@ -21,6 +16,8 @@ binds {
     Mod+Shift+L { move-column-right; }
 
     // Resize
+    Mod+R       hotkey-overlay-title="Cycle preset widths" { switch-preset-column-width; }
+
     Mod+Ctrl+H { set-column-width "-10%"; }
     Mod+Ctrl+L { set-column-width "+10%"; }
 
