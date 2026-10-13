@@ -23,13 +23,6 @@ binds {
     Mod+Ctrl+J hotkey-overlay-title="Decrease window height" { set-window-height "-10%"; }
     Mod+Ctrl+K hotkey-overlay-title="Increase window height" { set-window-height "+10%"; }
 
-    // First/last column
-    Mod+Home { focus-column-first; }
-    Mod+End  { focus-column-last; }
-
-    Mod+Ctrl+Home { move-column-to-first; }
-    Mod+Ctrl+End  { move-column-to-last; }
-
     // Monitor navigation
     Mod+Shift+Left  { focus-monitor-left; }
     Mod+Shift+Down  { focus-monitor-down; }
@@ -51,17 +44,11 @@ binds {
     Ctrl+Alt+L { focus-workspace-down; }
     Ctrl+Alt+H { focus-workspace-up; }
 
-    Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
-    Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
+    Mod+Ctrl+D { move-column-to-workspace-down; }
+    Mod+Ctrl+U { move-column-to-workspace-up; }
 
-    Mod+Ctrl+U { move-column-to-workspace-down; }
-    Mod+Ctrl+I { move-column-to-workspace-up; }
-
-    Mod+Shift+Page_Down { move-workspace-down; }
-    Mod+Shift+Page_Up   { move-workspace-up; }
-
-    Mod+Shift+U { move-workspace-down; }
-    Mod+Shift+I { move-workspace-up; }
+    Mod+Shift+D hotkey-overlay-title="Move workspace down" { move-workspace-down; }
+    Mod+Shift+U hotkey-overlay-title="Move workspace up" { move-workspace-up; }
 
     // Mouse wheel
     Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
