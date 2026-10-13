@@ -18,11 +18,10 @@ binds {
     // Resize
     Mod+R       hotkey-overlay-title="Cycle preset widths" { switch-preset-column-width; }
 
-    Mod+Ctrl+H { set-column-width "-10%"; }
-    Mod+Ctrl+L { set-column-width "+10%"; }
-
-    Mod+Ctrl+J { set-window-height "-10%"; }
-    Mod+Ctrl+K { set-window-height "+10%"; }
+    Mod+Ctrl+H hotkey-overlay-title="Decrease column width" { set-column-width "-10%"; }
+    Mod+Ctrl+L hotkey-overlay-title="Increase column width" { set-column-width "+10%"; }
+    Mod+Ctrl+J hotkey-overlay-title="Decrease window height" { set-window-height "-10%"; }
+    Mod+Ctrl+K hotkey-overlay-title="Increase window height" { set-window-height "+10%"; }
 
     // First/last column
     Mod+Home { focus-column-first; }
@@ -113,7 +112,7 @@ binds {
     Mod+Period repeat=false { expel-window-from-column; }
 
     // Layout
-    Mod+Ctrl+Shift+R { switch-preset-window-height; }
+    Mod+Shift+R hotkey-overlay-title="Cycle preset heights" { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
 
     Mod+M repeat=false { maximize-column; }
@@ -125,7 +124,7 @@ binds {
     Mod+Ctrl+C { center-visible-columns; }
 
     // Floating
-    Mod+Alt+T { toggle-window-floating; }
+    Mod+T { toggle-window-floating; }
 
     // Overview
     Mod+W { toggle-column-tabbed-display; }
