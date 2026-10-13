@@ -6,15 +6,15 @@ binds {
     Alt+Tab hotkey-overlay-title="Window Switcher" { spawn "noctalia" "msg" "window-switcher"; }
 
     // Panels and settings
-    Mod+A hotkey-overlay-title="Open Notifications" { spawn "noctalia" "msg" "panel-toggle" "control-center" "notifications"; }
-    Mod+Z hotkey-overlay-title="Open Noctalia Settings" { spawn "noctalia" "msg" "settings-toggle"; }
-    Mod+X hotkey-overlay-title="Open Control Center" { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
-    Mod+Space hotkey-overlay-title="Open Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
-    Mod+Shift+W hotkey-overlay-title="Open Wallpaper Selector" { spawn "noctalia" "msg" "panel-toggle" "wallpaper"; }
-    Mod+V hotkey-overlay-title="Open Clipboard" { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
+    Mod+A repeat=false  hotkey-overlay-title="Open Notifications" { spawn "noctalia" "msg" "panel-toggle" "control-center" "notifications"; }
+    Mod+Z repeat=false hotkey-overlay-title="Open Noctalia Settings" { spawn "noctalia" "msg" "settings-toggle"; }
+    Mod+X repeat=false hotkey-overlay-title="Open Control Center" { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
+    Mod+Space repeat=false  hotkey-overlay-title="Open Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+Shift+W repeat=false  hotkey-overlay-title="Open Wallpaper Selector" { spawn "noctalia" "msg" "panel-toggle" "wallpaper"; }
+    Mod+V repeat=false  hotkey-overlay-title="Open Clipboard" { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
 
     // Screenshot
-    Mod+R hotkey-overlay-title="Noctalia Screenshot" { spawn "noctalia" "msg" "screenshot-region"; }
+    Ctrl+Shift+S hotkey-overlay-title="Noctalia Screenshot" { spawn "noctalia" "msg" "screenshot-region"; }
 
     // Night light
     Mod+N hotkey-overlay-title="Enable Night Light" { spawn "noctalia" "msg" "nightlight-enable"; }
