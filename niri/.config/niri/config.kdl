@@ -7,7 +7,7 @@ include "bindings/tiling.kdl"
 // general settings
 include "cfg/input.kdl"
 include "cfg/outputs.kdl"
-include "cfg/layout.kdl"
+include "cfg/appearance.kdl"
 include "cfg/animations.kdl"
 include "cfg/window-rules.kdl"
 include "cfg/env.kdl"
@@ -16,14 +16,6 @@ spawn-at-startup "kanshi"
 spawn-at-startup "noctalia"
 spawn-at-startup "fcitx5 -d"
 
-prefer-no-csd
-
-hotkey-overlay {
-  skip-at-startup
-}
-
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-
-
 
 include "noctalia.kdl"
