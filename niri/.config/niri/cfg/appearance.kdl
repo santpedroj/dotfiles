@@ -20,12 +20,12 @@ layout {
 
     focus-ring {
         on
-        width 1
+        width 3
     }
 
+    // disable border
     border {
-        on
-        width 2
+        off
     }
 
     shadow {
