@@ -7,7 +7,7 @@ debug {
 
 // Corners
 window-rule {
-  geometry-corner-radius 2
+  geometry-corner-radius 0
   clip-to-geometry true
   draw-border-with-background false
 }
