@@ -6,7 +6,6 @@ font-size = 19
 mouse-hide-while-typing = true
 
 cursor-style-blink = false
-custom-shader = ~/.config/ghostty/shaders/cursor_warp.glsl
 
 confirm-close-surface = false
 
