@@ -110,14 +110,21 @@ launch_apps_as_systemd_services = true # launch apps as transient systemd servic
 telemetry_enabled = false
 
 [shell.launcher]
+layout = "full"
+width = 560
+search_position = "bottom"
+default_view = "all"
+show_settings_button = "false"
+show_session_button = "false"
 app_grid = false            # icon grid with labels underneath when results are apps only
 auto_paste = "auto"         # off | auto | ctrl_v | ctrl_shift_v | shift_insert (after copy activations)
+provider_prefix = "/"       # common prefix character for provider trigger words (e.g. "/" or ".")
 categories = false          # show launcher category filters; Tab toggles them while open
 compact = true              # smaller icons and tighter rows; hides subtitles
-fetch_exchange_rates = true # refresh currency rates from third-party online sources
-provider_prefix = "/"       # common prefix character for provider trigger words (e.g. "/" or ".")
+fetch_exchange_rates = false # refresh currency rates from third-party online sources
 show_icons = true           # show application icons in launcher results
 sort_by_usage = false       # boost frequently used apps and show Recently Used filter
+track_usage = true
 
 [shell.panel]
 transparency_mode     = "solid"  # solid | soft | glass; controls floating panel opacity and card translucency
