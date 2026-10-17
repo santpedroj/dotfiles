@@ -2,27 +2,22 @@ disableStartupPopups: true
 gui:
   showPanelJumps: false
   sidePanels:
-    - [files]
     - [status]
-    - [branches]
+    - [files, worktrees]
+    - [branches, tags]
     - [commits]
-    - [stash]
   showRandomTip: false
   showCommandLog: false
-  showRootItemInFileTree: false
+  showRootItemInFileTree: true
   showNumstatInFilesView: true
   showBottomLine: false
   commitHashLength: 0
-git:
-  diffRenderers:
-    - colorArg: always
-      command: delta --paging=never
 keybinding:
   universal:
-    focusMainView: "2"
+    focusMainView: "0"
     jumpToBlock:
       - "1"
+      - "2"
       - "3"
       - "4"
       - "5"
-      - "6"
