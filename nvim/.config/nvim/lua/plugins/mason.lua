@@ -1,15 +1,14 @@
 return {
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        lua_ls = {
-          mason = false,
-        },
-        nil_ls = {
-          mason = false,
-        },
-      },
+  "mason-org/mason.nvim",
+  opts = {
+    ensure_installed = {
+      "basedpyright",
+      "markdown-oxide",
+      "ruff",
+      "stylua",
+      "shellcheck",
+      "shfmt",
+      "tree-sitter-cli",
     },
   },
 }
