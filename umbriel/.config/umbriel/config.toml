@@ -1,8 +1,9 @@
-#Check edits with `umbriel config validate`.
+# Check edits with `umbriel config validate`.
 # Complete reference: https://docs.noctalia.dev/umbriel/
 
 # ==============================================================================
 # Includes
+# ==============================================================================
 
 # Optional split configuration
 # https://docs.noctalia.dev/umbriel/configuration/#include
@@ -22,6 +23,7 @@ files = ["noctalia.toml"]
 
 # ==============================================================================
 # General
+# ==============================================================================
 
 # Optional session examples. XWayland support is enabled by default.
 # https://docs.noctalia.dev/umbriel/configuration/#general
@@ -31,6 +33,7 @@ autostart = ["noctalia"]
 
 # ==============================================================================
 # Lid events
+# ==============================================================================
 
 # Remove the laptop panel from the desktop while the lid is closed, then
 # restore it when the lid opens. Replace eDP-1 with the name from
@@ -42,6 +45,7 @@ autostart = ["noctalia"]
 
 # ==============================================================================
 # Screencast
+# ==============================================================================
 
 # By default, the first target-changing action during an active share asks for
 # confirmation. Disable that protection only if immediate keybind changes are
@@ -52,6 +56,8 @@ autostart = ["noctalia"]
 
 # ==============================================================================
 # Layer rules
+# ==============================================================================
+
 # https://docs.noctalia.dev/umbriel/layer-rules/
 [[layer_rule]]
 match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
@@ -62,6 +68,8 @@ blur_optimized = false
 
 # ==============================================================================
 # Overview
+# ==============================================================================
+
 # Built-in overview and animation values are used. The top-left hot corner opens
 # the overview after a short delay.
 # Overview: https://docs.noctalia.dev/umbriel/workspaces-overview/
@@ -70,3 +78,4 @@ blur_optimized = false
 enabled = false
 delay_ms = 500
 action = "overview-open"
+

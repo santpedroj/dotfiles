@@ -1,12 +1,24 @@
 # ==============================================================================
 # Keybinds
+# ==============================================================================
+
 # Defining this table replaces the built-in bind set, so every active bind that
 # should remain available is listed here.
 # Syntax: https://docs.noctalia.dev/umbriel/keybinds/
 # Actions: https://docs.noctalia.dev/umbriel/actions/
+
 [keybinds]
 
+# ==============================================================================
+# Input
+# ==============================================================================
+
+"Mod+Shift+S" = "keyboard-layout-next"
+
+# ==============================================================================
 # Applications and session
+# ==============================================================================
+
 "Mod+Return" = { action = "spawn:ghostty", repeat = false }
 "Mod+B" = { action = "spawn:brave-origin", repeat = false }
 "Mod+E" = { action = "spawn:thunar", repeat = false }
@@ -16,7 +28,10 @@
 "Mod+Escape" = "session-quit"
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
 
+# ==============================================================================
 # Noctalia panels
+# ==============================================================================
+
 "Alt+Tab" = { action = "spawn:noctalia msg window-switcher", repeat = false }
 "Mod+A" = { action = "spawn:noctalia msg panel-toggle control-center notifications", repeat = false }
 "Mod+X" = { action = "spawn:noctalia msg panel-toggle control-center", repeat = false }
@@ -26,18 +41,27 @@
 "Mod+Alt+C" = { action = "spawn:noctalia msg panel-toggle session", repeat = false }
 "Ctrl+Shift+S" = { action = "spawn:noctalia msg screenshot-region", repeat = false } # was SUPER+R in Hyprland
 
+# ==============================================================================
 # Nightlight
+# ==============================================================================
+
 "Mod+N" = { action = "spawn:noctalia msg nightlight-enable", repeat = false }
 "Mod+Alt+N" = { action = "spawn:noctalia msg nightlight-disable", repeat = false }
 
+# ==============================================================================
 # Media and brightness (Noctalia)
+# ==============================================================================
+
 "XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up"
 "XF86AudioLowerVolume" = "spawn:noctalia msg volume-down"
 "XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", repeat = false }
 "XF86MonBrightnessUp" = "spawn:noctalia msg brightness-up"
 "XF86MonBrightnessDown" = "spawn:noctalia msg brightness-down"
 
+# ==============================================================================
 # Focus and movement
+# ==============================================================================
+
 "Mod+Left" = "window-focus-left"
 "Mod+Down" = "window-focus-down"
 "Mod+Up" = "window-focus-up"
@@ -56,7 +80,10 @@
 "Mod+Shift+K" = "window-move-up"
 "Mod+Shift+J" = "window-move-down"
 
+# ==============================================================================
 # Window state and layout
+# ==============================================================================
+
 "Mod+T" = { action = "window-toggle-floating", repeat = false }
 "Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
 "Mod+P" = { action = "window-toggle-pinned", repeat = false }
@@ -75,13 +102,19 @@
 "Mod+WheelDown" = "window-focus-right"
 "Mod+O" = { action = "overview-toggle", repeat = false }
 
+# ==============================================================================
 # Resize (repeats while held)
+# ==============================================================================
+
 "Mod+Ctrl+H" = "window-modify-primary-extent:-0.05"
 "Mod+Ctrl+L" = "window-modify-primary-extent:0.05"
 "Mod+Ctrl+J" = "window-modify-height-down:-0.05"
 "Mod+Ctrl+K" = "window-modify-height-down:0.05"
 
+# ==============================================================================
 # Workspaces
+# ==============================================================================
+
 "Ctrl+Alt+L" = "workspace-next"
 "Ctrl+Alt+H" = "workspace-previous"
 "Mod+1" = "workspace-switch:1"
@@ -103,8 +136,12 @@
 "Mod+Shift+8" = "window-move-to-workspace:8"
 "Mod+Shift+9" = "window-move-to-workspace:9"
 
+# ==============================================================================
 # Scratchpad
+# ==============================================================================
+
 #"Mod+Shift+Space" = { action = "window-move-to-scratchpad", repeat = false }
 #"Mod+Space" = "scratchpad-toggle"
 "Mod+Ctrl+Space" = { action = "window-restore-from-scratchpad", repeat = false }
 "Mod+Tab" = "scratchpad-focus-next"
+

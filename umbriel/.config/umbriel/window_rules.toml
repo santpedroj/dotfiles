@@ -1,5 +1,7 @@
 # ==============================================================================
 # Window rules
+# ==============================================================================
+
 # Rules combine in order, with later values overriding earlier ones.
 # https://docs.noctalia.dev/umbriel/window-rules/
 
@@ -68,7 +70,6 @@ match.title = "^notificationtoasts_.+_desktop"
 default_position = { x = 0, y = 0, anchor = "top_left" }
 default_focused = false
 default_pinned = true
-# ==============================================================================
 
 # Leave an application that draws its own corners and shadow undecorated.
 # [[window_rule]]
