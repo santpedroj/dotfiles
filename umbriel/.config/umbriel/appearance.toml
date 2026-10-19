@@ -13,6 +13,15 @@ corner_radius = 10
 drag_opacity = 0.75
 opaque_fullscreen = true
 
+[overview]
+zoom = 0.5
+scroll_factor_horizontal = 1.0
+scroll_factor_vertical = 1.0
+background_blur = false
+workspace_wallpaper = true
+shortcuts = true
+shortcut_keys = "1234567890"
+
 [appearance.blur]
 radius = 3
 
