@@ -29,6 +29,7 @@ files = ["noctalia.toml"]
 # https://docs.noctalia.dev/umbriel/configuration/#general
 [general]
 autostart = ["noctalia"]
+show_cheatsheet = false
 # xwayland = false
 
 # ==============================================================================
