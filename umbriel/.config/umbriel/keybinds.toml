@@ -85,15 +85,22 @@
 "Mod+M" = { action = "window-toggle-maximize", repeat = false }
 "Mod+R" = "window-cycle-primary-extent"
 "Mod+Shift+R" = "window-cycle-primary-extent-back"
-"Mod+Comma" = "window-consume-left"
-"Mod+Period" = "window-consume-right"
-"Mod+Shift+Comma" = "layout-scroll-left"
-"Mod+Shift+Period" = "layout-scroll-right"
-"Mod+I" = "window-consume-or-expel-left"
-"Mod+Shift+O" = "window-consume-or-expel-right"
+"Mod+Comma" = "window-consume-or-expel-left"
+"Mod+Period" = "window-consume-or-expel-right"
 "Mod+WheelUp" = "window-focus-left"
 "Mod+WheelDown" = "window-focus-right"
 "Mod+O" = { action = "overview-toggle", repeat = false }
+
+# ==============================================================================
+# Tab groups
+# ==============================================================================
+
+"Mod+W" = "column-toggle-tabbed"
+"Mod+Alt+H" = "column-focus-tab-previous"
+"Mod+Alt+L" = "column-focus-tab-next"
+"Mod+Alt+Shift+H" = "column-move-tab-previous"
+"Mod+Alt+Shift+L" = "column-move-tab-next"
+"Mod+Alt+W" = "column-toggle-tab-bar"
 
 # ==============================================================================
 # Resize (repeats while held)
