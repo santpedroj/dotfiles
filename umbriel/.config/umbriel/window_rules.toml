@@ -3,11 +3,49 @@
 # Rules combine in order, with later values overriding earlier ones.
 # https://docs.noctalia.dev/umbriel/window-rules/
 
-# Blur windows using the non-optimized path so translucent windows include
-# overlapping windows behind them.
+# ==============================================================================
+# Blur
+# ==============================================================================
+
 [[window_rule]]
 blur = false
 blur_optimized = false
+
+# ==============================================================================
+# Apps
+# ==============================================================================
+
+# Terminal
+[[window_rule]]
+match.app_id = "ghostty"
+match.is_alone = true
+default_maximize = true
+
+# Browser
+[[window_rule]]
+match.app_id = "brave-origin"
+match.is_alone = true
+default_maximize = true
+
+# File_manager
+[[window_rule]]
+match.app_id = "^thunar$"
+match.is_alone = true
+default_maximize = true
+
+[[window_rule]]
+match.app_id = "^thunar$"
+match.title = "^Rename "
+default_floating = true
+
+[[window_rule]]
+match.app_id = "^dfr[.]floating[.]thunar$"
+default_floating = true
+default_floating_size = { width = 0.33, height = 0.5 }
+
+# ==============================================================================
+# Noctalia
+# ==============================================================================
 
 [[window_rule]]
 match.app_id = "^dev.noctalia.Noctalia$"
@@ -27,15 +65,10 @@ default_position = { x = 20, y = 20, anchor = "bottom_right" }
 
 [[window_rule]]
 match.title = "^notificationtoasts_.+_desktop"
-default_position = { x = 0, y = 0, anchor = "bottom_right" }
+default_position = { x = 0, y = 0, anchor = "top_left" }
 default_focused = false
 default_pinned = true
-
-# Give scratchpad windows their own border colors.
-# [[window_rule]]
-# match.is_scratchpad = true
-# border_color_focused = "#E5C07BFF"
-# border_color_unfocused = "#5C4A2AFF"
+# ==============================================================================
 
 # Leave an application that draws its own corners and shadow undecorated.
 # [[window_rule]]
