@@ -7,9 +7,10 @@
 [keybinds]
 
 # Applications and session
-"Mod+Return" = { action = "spawn:kitty", repeat = false }
+"Mod+Return" = { action = "spawn:ghostty", repeat = false }
 "Mod+B" = { action = "spawn:brave-origin", repeat = false }
 "Mod+E" = { action = "spawn:thunar", repeat = false }
+"Mod+Shift+E" = { action = "spawn:thunar --name=dfr.floating.thunar", repeat = false }
 "Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+Q" = { action = "window-close", repeat = false }
 "Mod+Escape" = "session-quit"
@@ -23,7 +24,7 @@
 "Mod+V" = { action = "spawn:noctalia msg panel-toggle clipboard", repeat = false }
 "Mod+Shift+W" = { action = "spawn:noctalia msg panel-toggle wallpaper", repeat = false }
 "Mod+Alt+C" = { action = "spawn:noctalia msg panel-toggle session", repeat = false }
-"Mod+Shift+S" = { action = "spawn:noctalia msg screenshot-region", repeat = false } # was SUPER+R in Hyprland
+"Ctrl+Shift+S" = { action = "spawn:noctalia msg screenshot-region", repeat = false } # was SUPER+R in Hyprland
 
 # Nightlight
 "Mod+N" = { action = "spawn:noctalia msg nightlight-enable", repeat = false }
