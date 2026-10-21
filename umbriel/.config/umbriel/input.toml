@@ -18,6 +18,14 @@ track_layout = "global"
 # Mouse
 # ==============================================================================
 
+[input.cursor]
+theme = "Adwaita"
+size = 24
+hardware_cursor = true
+follows_focus = false
+hide_when_typing = true
+hide_timeout_ms = 0
+
 [input.mouse]
 natural_scroll = false
 left_handed = false
@@ -28,7 +36,7 @@ scroll_wheel_step = 60
 # scroll_button_lock = false
 
 # ==============================================================================
-# Mouse
+# Touchpad
 # ==============================================================================
 
 [input.touchpad]
