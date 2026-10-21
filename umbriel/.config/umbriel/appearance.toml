@@ -9,7 +9,7 @@
 prefer_no_csd = true
 border_width = 2
 outer_border_width = 0
-corner_radius = 10
+corner_radius = 0
 drag_opacity = 0.75
 opaque_fullscreen = true
 
@@ -35,7 +35,7 @@ radius = 3
 
 [animation]
 enabled = true
-duration_ms = 150
+duration_ms = 250
 curve = "easeout"
 
 # ------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ curve = "easeout"
 enabled = true
 curve = "spring:1,900"
 style = "popin"
-scale = 0.5
+scale = 0.8
 
 # ------------------------------------------------------------------------------
 # Windows out
@@ -72,7 +72,7 @@ curve = "spring:1,900"
 
 [animation.workspaces]
 enabled = false
-curve = "spring:1,800"
+curve = "snappy"
 
 # ------------------------------------------------------------------------------
 # Overview
@@ -80,8 +80,8 @@ curve = "spring:1,800"
 
 [animation.overview]
 enabled = true
-curve = "spring:1,800"
-workspace_curve = "spring:1,1000"
+curve = "easeout"
+workspace_curve = "snappy"
 
 # ------------------------------------------------------------------------------
 # Scratchpad
@@ -102,7 +102,8 @@ fullscreen = false
 
 [animation.border]
 enabled = true
-curve = "spring:1,900"
+curve = "snappy"
+#curve = "spring:1,900"
 
 # ------------------------------------------------------------------------------
 # Dim unfocused
