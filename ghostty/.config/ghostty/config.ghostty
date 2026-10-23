@@ -1,6 +1,9 @@
 command = /bin/zsh
 
+shell-integration = zsh
+
 theme = Kanagawa Wave
+
 font-family = "JetBrainsMono Nerd Font"
 font-size = 19
 mouse-hide-while-typing = true
