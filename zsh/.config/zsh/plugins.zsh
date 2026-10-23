@@ -26,6 +26,6 @@ zplugin-update() {
 _zplugin_load zsh-users zsh-autosuggestions
 _zplugin_load zsh-users zsh-history-substring-search
 eval "$(/home/linuxbrew/.linuxbrew/bin/zsh-patina activate)"
-#_zplugin_load jeffreytse zsh-vi-mode
+_zplugin_load jeffreytse zsh-vi-mode
 #_zplugin_load zdharma-continuum fast-syntax-highlighting
 
