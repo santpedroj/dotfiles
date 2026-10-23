@@ -130,8 +130,8 @@ style = "bold red dimmed"
 format = "[$symbol \\[$name\\]]($style) "
 
 # Prompt Character
-[character]
-error_symbol = "[✗](bold red) "
+#[character]
+#error_symbol = "[✗](bold red) "
 
 # Custom Modules
 [custom.update]
