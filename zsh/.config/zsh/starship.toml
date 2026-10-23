@@ -1,104 +1,42 @@
-# Get editor completions based on the config schema
+# Schema
 "$schema" = "https://starship.rs/config-schema.json"
 
+# Prompt Format
 format = """
-$username\
 $hostname\
 $directory\
 $git_branch\
 $git_status\
-$nix_shell\
+$fill\
 $c\
-$cpp\
 $rust\
-$golang\
 $nodejs\
-$bun\
-$php\
-$java\
-$kotlin\
 $python\
+$lua\
+$ruby\
+$package\
 $docker_context\
-$conda\
-$time\
-$line_break\
-$character\
+$jobs\
+$cmd_duration\
 $container\
-"""
+$line_break\
+$character"""
+
 add_newline = true
 
+# Fill
+[fill]
+symbol = " "
+
+# Line Break
 [line_break]
 disabled = false
 
+# Operating System
 [os]
 disabled = false
 style = "bold blue"
 format = "[$symbol]($style) "
-
-[username]
-style_user = "blue bold"
-style_root = "red bold"
-format = "[$user]($style)"
-disabled = false
-show_always = true
-
-[hostname]
-ssh_only = true
-ssh_symbol = " "
-format = "[$ssh_symbol](bold gray) at [$hostname](bold green) "
-disabled = false
-
-[container]
-symbol = " "
-style = "bold red dimmed"
-format = '[$symbol \[$name\]]($style) '
-
-[character]
-success_symbol = "[➜](bold green) "
-error_symbol = "[✗](bold red) "
-
-[aws]
-symbol = "  "
-
-[c]
-symbol = " "
-
-[directory]
-read_only = " 󰌾"
-format = " in [$path](bold yellow) "
-
-[docker_context]
-symbol = " "
-
-[fossil_branch]
-symbol = " "
-
-[git_branch]
-symbol = " "
-
-[git_commit]
-tag_symbol = "  "
-
-[golang]
-symbol = " "
-
-[hg_branch]
-symbol = " "
-
-[java]
-symbol = " "
-
-[lua]
-symbol = " "
-
-[memory_usage]
-symbol = "󰍛 "
-
-[nodejs]
-symbol = " "
-
-[nix_shell]
-symbol = " "
 
 [os.symbols]
 Alpine = " "
@@ -106,25 +44,99 @@ Arch = " "
 CentOS = " "
 Debian = " "
 Fedora = " "
-NixOS = " "
 Kali = " "
 
-[package]
-symbol = "󰏗 "
+# Hostname
+[hostname]
+ssh_only = true
+ssh_symbol = " "
+format = "[$ssh_symbol](bold gray) at [$hostname](bold green) "
+disabled = false
 
-[pijul_channel]
+# Directory
+[directory]
+read_only = "󰌾"
+format = "[$path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+truncate_to_repo = false
+
+[directory.substitutions]
+"Documents" = "󰈙"
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+# Git
+[git_branch]
 symbol = " "
 
+[git_commit]
+tag_symbol = "  "
+
+# Programming Languages
+[c]
+symbol = " "
+
+[rust]
+style = "orange"
+symbol = " "
+
+[nodejs]
+symbol = " "
+
 [python]
+style = "yellow"
 symbol = " "
+format = '[${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)'
+pyenv_version_name = true
+pyenv_prefix = ""
+
+[lua]
+symbol = " "
 
 [ruby]
 symbol = " "
 
+# Package
+[package]
+symbol = "󰏗 "
+
+# Docker
+[docker_context]
+symbol = " "
+style = "fg:#06969A"
+format = "[$symbol]($style) $path"
+detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+detect_extensions = ["Dockerfile"]
+
+# Jobs
+[jobs]
+symbol = " "
+style = "red"
+number_threshold = 1
+format = "[$symbol]($style)"
+
+# Command Duration
+[cmd_duration]
+min_time = 500
+style = "fg:yellow"
+format = "[$duration]($style)"
+
+# Container
+[container]
+symbol = " "
+style = "bold red dimmed"
+format = "[$symbol \\[$name\\]]($style) "
+
+# Prompt Character
+[character]
+error_symbol = "[✗](bold red) "
+
+# Custom Modules
 [custom.update]
 when = "/usr/bin/rpm-ostree status --json | /usr/bin/jq -e \".deployments[0].booted == false\" > /dev/null;"
-command = 'echo "New deployment staged"'
+command = "echo \"New deployment staged\""
 symbol = ""
 format = " $symbol [($output)]($style) "
 style = "italic green"
-
