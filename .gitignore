@@ -5,6 +5,7 @@ noctalia/.local/state/noctalia/plugins
 plugin-cache
 notification_history.json
 recently_used.json
+tmux/.config/tmux/plugins
 usage_counts.json
 .setup-complete
 .zcompdump
