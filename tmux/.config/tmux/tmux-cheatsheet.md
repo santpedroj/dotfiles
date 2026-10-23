@@ -34,7 +34,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ## Shortcuts
 
-- Prefix: `CTRL + <Space>`
+- Prefix: `CTRL + b`
 - Create new tmux window: `Prefix + c`
 - Navigate to window: `Prefix + number`
 - Cycle through window: `Prefix + n/p`
