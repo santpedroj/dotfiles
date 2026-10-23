@@ -35,6 +35,11 @@ setopt NUMERIC_GLOB_SORT  # sort file10 after file9, not after file1
 # Smart directory navigation
 # =========================================================
 
+if [[ -f ~/.config/lf/icons ]]; then
+  LF_ICONS=$(cat ~/.config/lf/icons | tr '\n' ':')
+  export LF_ICONS
+fi
+
 # Initialize zoxide
 eval "$(zoxide init zsh)"
 
@@ -54,10 +59,6 @@ zstyle ':completion:*' menu select
 # Make completion case-insensitive
 # Example: "doc" can complete to "Documents"
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'  # lowercase input matches upper and lower
-
-# vim autocomplete
-compdef _files vim
-compdef _files nvim
 
 # =========================================================
 # Fuzzy finder
@@ -121,6 +122,7 @@ eval "$(atuin init zsh)"
 # =========================================================
 # Homebrew
 # =========================================================
+#
 #eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.config/zsh/.p10k.zsh.
