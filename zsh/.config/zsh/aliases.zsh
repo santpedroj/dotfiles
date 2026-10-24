@@ -1,14 +1,14 @@
 # Better ls
-alias ls='eza --icons'
+alias ls='eza --icons auto'
 
 # Detailed listing
 alias ll='eza -lh --icons --git'
 
 # Detailed listing including hidden files
-alias la='eza -lah --icons --git'
+alias la='eza -lah --icons auto --git'
 
 # Tree view
-alias tree='eza --tree --icons'
+alias tree='eza --tree --icons auto'
 
 # Reuse ls completions for eza (avoids defining a separate completion function)
 compdef eza=ls
@@ -20,7 +20,7 @@ alias cat='bat'
 # Core utilities
 # =========================================================
 
-#alias grep='rg --color=auto'
+alias grep='rg --color=auto'
 alias diff='diff --color=auto'
 alias df='df -h'
 
@@ -35,7 +35,6 @@ alias -- -='cd -'  # -- prevents - being parsed as a flag; cd - jumps to previou
 # =========================================================
 
 alias vim='nvim'
-alias kvim='NVIM_APPNAME=sant-nvim nvim'
 
 # =========================================================
 # Git
@@ -51,7 +50,6 @@ alias lgit="lazygit"
 # =========================================================
 
 alias fastfetch='/usr/bin/fastfetch -c ~/.config/fastfetch/config.jsonc'
-#alias fastfetch='/usr/bin/fastfetch -l fedora_small -c ~/.config/fastfetch/config.jsonc'
 
 # =========================================================
 # Distrobox

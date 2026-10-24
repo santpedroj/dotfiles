@@ -31,6 +31,9 @@ zvm_after_init() {
   bindkey '^[[A' history-substring-search-up
   bindkey '^[[B' history-substring-search-down
 
-  bindkey -M viins '^R' atuin-search-viins
-  bindkey -M vicmd '^R' atuin-search-vicmd
+ # Only overwrite Ctrl+R if fzf is installed and its widgets are loaded
+  if zle -l | grep -q fzf-history-widget; then
+    # Bind fzf specifically to the vi-insert mode (-M viins)
+    bindkey -M viins '^R' fzf-history-widget
+  fi
 }

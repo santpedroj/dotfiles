@@ -7,8 +7,6 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --strip-cwd-prefix'  # strip-cw
 # Ctrl-T uses fd
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
-
 # UI
 export FZF_DEFAULT_OPTS='
   --height=60%

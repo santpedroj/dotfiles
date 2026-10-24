@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # .zshrc
 
 # =========================================================
@@ -29,7 +22,6 @@ setopt HIST_FIND_NO_DUPS
 setopt AUTOCD
 setopt NOBEEP
 setopt NUMERIC_GLOB_SORT  # sort file10 after file9, not after file1
-
 
 # =========================================================
 # Smart directory navigation
@@ -107,12 +99,6 @@ function y() {
     rm -f -- "$tmp"
 }
 
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
-
-# To customize prompt, run `p10k configure` or edit /var/home/johan/dotfiles/config/.config/zsh/.p10k.zsh.
-[[ ! -f /var/home/johan/dotfiles/config/.config/zsh/.p10k.zsh ]] || source /var/home/johan/dotfiles/config/.config/zsh/.p10k.zsh
-
 # =========================================================
 # Atuin
 # =========================================================
@@ -124,6 +110,3 @@ eval "$(atuin init zsh)"
 # =========================================================
 #
 #eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-# To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.config/zsh/.p10k.zsh.
-[[ ! -f ~/dotfiles/zsh/.config/zsh/.p10k.zsh ]] || source ~/dotfiles/zsh/.config/zsh/.p10k.zsh
