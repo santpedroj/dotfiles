@@ -27,3 +27,11 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.softtabstop = 4
   end,
 })
+
+-- fix kitty file-watcher bug
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = "*/kitty/*.conf",
+  callback = function()
+    vim.opt_local.backupcopy = "yes"
+  end,
+})
