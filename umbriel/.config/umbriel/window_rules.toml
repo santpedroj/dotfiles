@@ -31,17 +31,17 @@ default_maximize = true
 
 # File_manager
 [[window_rule]]
-match.app_id = "^thunar$"
+match.app_id = "^dolphin$"
 match.is_alone = true
 default_maximize = true
 
 [[window_rule]]
-match.app_id = "^thunar$"
+match.app_id = "^dolphin$"
 match.title = "^Rename "
 default_floating = true
 
 [[window_rule]]
-match.app_id = "^dfr[.]floating[.]thunar$"
+match.app_id = "^dfr[.]floating[.]dolphin$"
 default_floating = true
 default_floating_size = { width = 0.33, height = 0.5 }
 
