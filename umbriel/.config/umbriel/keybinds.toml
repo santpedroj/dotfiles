@@ -21,10 +21,10 @@
 # Applications and session
 # ==============================================================================
 
-"Mod+Return" = { action = "spawn:ghostty", repeat = false }
+"Mod+Return" = { action = "spawn:kitty", repeat = false }
 "Mod+B" = { action = "spawn:brave-origin", repeat = false }
-"Mod+E" = { action = "spawn:thunar", repeat = false }
-"Mod+Shift+E" = { action = "spawn:thunar --name=dfr.floating.thunar", repeat = false }
+"Mod+E" = { action = "spawn:dolphin", repeat = false }
+"Mod+Shift+E" = { action = "spawn:dolphin --name=dfr.floating.dolphin", repeat = false }
 "Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+Q" = { action = "window-close", repeat = false }
 "Mod+Escape" = "session-quit"
