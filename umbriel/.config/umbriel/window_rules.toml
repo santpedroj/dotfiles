@@ -19,7 +19,7 @@ blur_optimized = false
 
 # Terminal
 [[window_rule]]
-match.app_id = "ghostty"
+match.app_id = "kitty"
 match.is_alone = true
 default_maximize = true
 
