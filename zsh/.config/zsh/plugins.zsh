@@ -23,13 +23,13 @@ zplugin-update() {
   done
 }
 
-#_zplugin_load zsh-users zsh-autosuggestions
+_zplugin_load zsh-users zsh-autosuggestions
 _zplugin_load zsh-users zsh-history-substring-search
 _zplugin_load jeffreytse zsh-vi-mode
 eval "$(/home/linuxbrew/.linuxbrew/bin/zsh-patina activate)"
 
-if [[ -r "$HOME/.local/share/deja/init.zsh" ]]; then
-  source "$HOME/.local/share/deja/init.zsh"
-else
-  eval "$(deja init zsh)"
-fi
+#if [[ -r "$HOME/.local/share/deja/init.zsh" ]]; then
+#  source "$HOME/.local/share/deja/init.zsh"
+#else
+#  eval "$(deja init zsh)"
+#fi

@@ -4,7 +4,7 @@
 # History
 # =========================================================
 
-HISTFILE="$XDG_STATE_HOME/zsh/history"
+HISTFILE="$XDG_STATE_HOME/zsh/history" # ~/.local/state/zsh/history
 HISTSIZE=100000
 SAVEHIST=100000
 
@@ -27,13 +27,13 @@ setopt NUMERIC_GLOB_SORT  # sort file10 after file9, not after file1
 # Smart directory navigation
 # =========================================================
 
+# Initialize zoxide
+eval "$(zoxide init zsh)"
+
 if [[ -f ~/.config/lf/icons ]]; then
   LF_ICONS=$(cat ~/.config/lf/icons | tr '\n' ':')
   export LF_ICONS
 fi
-
-# Initialize zoxide
-eval "$(zoxide init zsh)"
 
 # =========================================================
 # Completion
@@ -56,9 +56,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'  # lowercase input matche
 # Fuzzy finder
 # =========================================================
 
-if [[ -f /usr/share/fzf/shell/key-bindings.zsh ]]; then
-  source /usr/share/fzf/shell/key-bindings.zsh 
-fi
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 # =========================================================
 # Modular Config Files
