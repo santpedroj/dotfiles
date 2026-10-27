@@ -108,13 +108,15 @@ clipboard_enabled = true
 clipboard_history_max_entries = 100    # unpinned history cap (10–10000); pinned entries are exempt
 clipboard_keep_from_closed_apps = true # keep the live selection after its source application closes
 launch_apps_as_systemd_services = true # launch apps as transient systemd services (needs Noctalia to be a user unit)
+polkit_agent = true           # register Noctalia's native polkit authentication agent
 telemetry_enabled = false
 
 [shell.launcher]
-layout = "full"
+layout = "simple" # full | simple
 width = 560
 search_position = "bottom"
 default_view = "all"
+show_app_origin_indicator = true # show package origin indicators on application results
 show_settings_button = "false"
 show_session_button = "false"
 app_grid = false            # icon grid with labels underneath when results are apps only
