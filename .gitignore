@@ -11,3 +11,7 @@ usage_counts.json
 .zcompdump
 .zcompdump*
 {{pkgetc}}
+fast-syntax-highlighting
+zsh-autosuggestions
+zsh-history-substring-search
+zsh-vi-mode
