@@ -37,17 +37,6 @@ show_cheatsheet = false
 #nvidia_sync_workaround = true #default is true
 
 # ==============================================================================
-# Layer rules
-# ==============================================================================
-
-# https://docs.noctalia.dev/umbriel/layer-rules/
-[[layer_rule]]
-match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
-blur = false
-blur_popups = false
-blur_optimized = false
-
-# ==============================================================================
 # Overview
 # ==============================================================================
 
