@@ -29,7 +29,12 @@ files = ["noctalia.toml"]
 # https://docs.noctalia.dev/umbriel/configuration/#general
 [general]
 autostart = ["noctalia"]
+mod_key = "Super"
+xwayland = true
+xwayland_xsettings = true
+attach_modal_dialogs = true
 show_cheatsheet = false
+#nvidia_sync_workaround = true #default is true
 
 # ==============================================================================
 # Layer rules
@@ -38,23 +43,33 @@ show_cheatsheet = false
 # https://docs.noctalia.dev/umbriel/layer-rules/
 [[layer_rule]]
 match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
-blur = true
-blur_ignore_alpha = 0.5
-blur_popups = true
+blur = false
+blur_popups = false
 blur_optimized = false
 
 # ==============================================================================
 # Overview
 # ==============================================================================
 
-# Built-in overview and animation values are used. The top-left hot corner opens
-# the overview after a short delay.
-# Overview: https://docs.noctalia.dev/umbriel/workspaces-overview/
-# Animation: https://docs.noctalia.dev/umbriel/animation/
-[hot_corners.top_left]
-enabled = false
-delay_ms = 500
-action = "overview-open"
+[overview]
+zoom = 0.5
+scroll_factor_horizontal = 1.0
+scroll_factor_vertical = 1.0
+background_blur = false
+workspace_wallpaper = true
+shortcuts = true
+shortcut_keys = "1234567890"
+
+# ==============================================================================
+# Scratchpads
+# ==============================================================================
+
+[[scratchpad]]
+name = "terminal"
+
+[keybinds]
+"Mod+Shift+T" = "scratchpad-toggle:terminal"
+"Mod+Ctrl+T" = "window-move-to-scratchpad:terminal"
 
 # ==============================================================================
 # Lid events

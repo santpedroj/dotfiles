@@ -138,13 +138,3 @@
 "Mod+Shift+7" = "window-move-to-workspace:7"
 "Mod+Shift+8" = "window-move-to-workspace:8"
 "Mod+Shift+9" = "window-move-to-workspace:9"
-
-# ==============================================================================
-# Scratchpad
-# ==============================================================================
-
-#"Mod+Shift+Space" = { action = "window-move-to-scratchpad", repeat = false }
-#"Mod+Space" = "scratchpad-toggle"
-"Mod+Ctrl+Space" = { action = "window-restore-from-scratchpad", repeat = false }
-"Mod+Tab" = "scratchpad-focus-next"
-
