@@ -18,7 +18,7 @@ zoom = 0.5
 scroll_factor_horizontal = 1.0
 scroll_factor_vertical = 1.0
 background_blur = false
-workspace_wallpaper = false
+workspace_wallpaper = true
 shortcuts = true
 shortcut_keys = "1234567890"
 
