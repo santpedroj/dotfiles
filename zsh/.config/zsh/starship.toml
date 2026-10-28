@@ -56,7 +56,8 @@ disabled = false
 # Directory
 [directory]
 read_only = "󰌾"
-format = "[$path ]($style)"
+read_only_style = "purple"
+format = "[$path ]($style)[$read_only]($read_only_style)"
 truncation_length = 3
 truncation_symbol = "…/"
 truncate_to_repo = false
