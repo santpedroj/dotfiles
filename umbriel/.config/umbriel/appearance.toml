@@ -87,7 +87,7 @@ workspace_curve = "snappy"
 
 [animation.scratchpad]
 enabled = true
-curve = "spring:1,800"
+curve = "linear"
 dim = 0.8
 blur = false
 
