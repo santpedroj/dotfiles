@@ -7,11 +7,11 @@ order = ["main"] # layer-shell creation order
 [bar.default]
 auto_hide = false        # slide out after pointer leaves; reveal from edge trigger strip
 background_opacity = 1.0 # 0.0 (transparent) to 1.0 (opaque)
-border = "outline"       # color role or #RRGGBB for the bar outline
+border = "outline_variant"       # color role or #RRGGBB for the bar outline
 border_width = 0.0       # inside outline width in pixels; 0 disables it
 capsule = false          # Default capsule style for all widgets on this bar (see Widget Capsule section)
 # capsule_border = "outline"   # omit this key for no border by default
-capsule_fill = "surface_variant"
+capsule_fill = "surface_container"
 capsule_opacity = 1.0
 capsule_radius = 8.0             # omit for automatic pill radius
 capsule_thickness = 0.76         # capsule size across the bar as a fraction of bar thickness (1.0 fills the bar)
@@ -132,7 +132,7 @@ track_usage = true
 [shell.panel]
 transparency_mode     = "solid"  # solid | soft | glass; controls floating panel opacity and card translucency
 borders               = true   # outline on floating panel surfaces
-border_color          = "outline"   # floating panel outline color: theme role token or #RRGGBB
+border_color          = "outline_variant"   # floating panel outline color: theme role token or #RRGGBB
 border_width          = 1.0         # floating panel outline width in px, 0 hides the stroke
 shadow                = false   # cast the global [shell.shadow] from panel surfaces
 list_item_background  = false  # filled rounded background behind launcher and clipboard list items
