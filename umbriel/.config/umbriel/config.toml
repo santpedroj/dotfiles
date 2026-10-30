@@ -36,7 +36,7 @@ xwayland = true
 xwayland_xsettings = true
 attach_modal_dialogs = true
 show_cheatsheet = false
-#nvidia_sync_workaround = true #default is true
+nvidia_sync_workaround = false #default is true
 
 # ==============================================================================
 # Overview
@@ -59,8 +59,8 @@ shortcut_keys = "1234567890"
 name = "terminal"
 
 [keybinds]
-"Mod+Shift+T" = "scratchpad-toggle:terminal"
-"Mod+Ctrl+T" = "window-move-to-scratchpad:terminal"
+"Mod+Shift+T" = "scratchpad-toggle terminal"
+"Mod+Ctrl+T" = "window-move-to-scratchpad terminal"
 
 # ==============================================================================
 # Lid events

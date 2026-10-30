@@ -21,11 +21,11 @@
 # Applications and session
 # ==============================================================================
 
-"Mod+Return" = { action = "spawn:kitty", repeat = false }
-"Mod+B" = { action = "spawn:brave-origin", repeat = false }
-"Mod+E" = { action = "spawn:dolphin", repeat = false }
-"Mod+Shift+E" = { action = "spawn:dolphin --name=dfr.floating.dolphin", repeat = false }
-"Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+Return" = { action = "spawn kitty", repeat = false }
+"Mod+B" = { action = "spawn brave-origin", repeat = false }
+"Mod+E" = { action = "spawn dolphin", repeat = false }
+"Mod+Shift+E" = { action = "spawn dolphin --name=dfr.floating.dolphin", repeat = false }
+"Mod+Space" = "spawn noctalia msg panel-toggle launcher"
 "Mod+Q" = { action = "window-close", repeat = false }
 "Mod+Escape" = "session-quit"
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
@@ -34,31 +34,31 @@
 # Noctalia panels
 # ==============================================================================
 
-"Alt+Tab" = { action = "spawn:noctalia msg window-switcher", repeat = false }
-"Mod+A" = { action = "spawn:noctalia msg panel-toggle control-center notifications", repeat = false }
-"Mod+X" = { action = "spawn:noctalia msg panel-toggle control-center", repeat = false }
-"Mod+Z" = { action = "spawn:noctalia msg settings-toggle", repeat = false }
-"Mod+V" = { action = "spawn:noctalia msg panel-toggle clipboard", repeat = false }
-"Mod+Shift+W" = { action = "spawn:noctalia msg panel-toggle wallpaper", repeat = false }
-"Mod+Alt+C" = { action = "spawn:noctalia msg panel-toggle session", repeat = false }
-"Ctrl+Shift+S" = { action = "spawn:noctalia msg screenshot-region", repeat = false } # was SUPER+R in Hyprland
+"Alt+Tab" = { action = "spawn noctalia msg window-switcher", repeat = false }
+"Mod+A" = { action = "spawn noctalia msg panel-toggle control-center notifications", repeat = false }
+"Mod+X" = { action = "spawn noctalia msg panel-toggle control-center", repeat = false }
+"Mod+Z" = { action = "spawn noctalia msg settings-toggle", repeat = false }
+"Mod+V" = { action = "spawn noctalia msg panel-toggle clipboard", repeat = false }
+"Mod+Shift+W" = { action = "spawn noctalia msg panel-toggle wallpaper", repeat = false }
+"Mod+Alt+C" = { action = "spawn noctalia msg panel-toggle session", repeat = false }
+"Ctrl+Shift+S" = { action = "spawn noctalia msg screenshot-region", repeat = false } # was SUPER+R in Hyprland
 
 # ==============================================================================
 # Nightlight
 # ==============================================================================
 
-"Mod+N" = { action = "spawn:noctalia msg nightlight-enable", repeat = false }
-"Mod+Alt+N" = { action = "spawn:noctalia msg nightlight-disable", repeat = false }
+"Mod+N" = { action = "spawn noctalia msg nightlight-enable", repeat = false }
+"Mod+Alt+N" = { action = "spawn noctalia msg nightlight-disable", repeat = false }
 
 # ==============================================================================
 # Media and brightness (Noctalia)
 # ==============================================================================
 
-"XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up"
-"XF86AudioLowerVolume" = "spawn:noctalia msg volume-down"
-"XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", repeat = false }
-"XF86MonBrightnessUp" = "spawn:noctalia msg brightness-up"
-"XF86MonBrightnessDown" = "spawn:noctalia msg brightness-down"
+"XF86AudioRaiseVolume" = "spawn noctalia msg volume-up"
+"XF86AudioLowerVolume" = "spawn noctalia msg volume-down"
+"XF86AudioMute" = { action = "spawn noctalia msg volume-mute", repeat = false }
+"XF86MonBrightnessUp" = "spawn noctalia msg brightness-up"
+"XF86MonBrightnessDown" = "spawn noctalia msg brightness-down"
 
 # ==============================================================================
 # Focus and movement
@@ -106,10 +106,10 @@
 # Resize (repeats while held)
 # ==============================================================================
 
-"Mod+Ctrl+H" = "window-modify-primary-extent:-0.05"
-"Mod+Ctrl+L" = "window-modify-primary-extent:0.05"
-"Mod+Ctrl+J" = "window-modify-height-down:-0.05"
-"Mod+Ctrl+K" = "window-modify-height-down:0.05"
+"Mod+Ctrl+H" = "window-modify-primary-extent -0.05"
+"Mod+Ctrl+L" = "window-modify-primary-extent 0.05"
+"Mod+Ctrl+J" = "window-modify-height-down -0.05"
+"Mod+Ctrl+K" = "window-modify-height-down 0.05"
 
 # ==============================================================================
 # Workspaces
@@ -118,23 +118,23 @@
 # Switch between workspaces
 "Ctrl+Alt+L" = "workspace-next"
 "Ctrl+Alt+H" = "workspace-previous"
-"Mod+1" = "workspace-switch:1"
-"Mod+2" = "workspace-switch:2"
-"Mod+3" = "workspace-switch:3"
-"Mod+4" = "workspace-switch:4"
-"Mod+5" = "workspace-switch:5"
-"Mod+6" = "workspace-switch:6"
-"Mod+7" = "workspace-switch:7"
-"Mod+8" = "workspace-switch:8"
-"Mod+9" = "workspace-switch:9"
+"Mod+1" = "workspace-switch 1"
+"Mod+2" = "workspace-switch 2"
+"Mod+3" = "workspace-switch 3"
+"Mod+4" = "workspace-switch 4"
+"Mod+5" = "workspace-switch 5"
+"Mod+6" = "workspace-switch 6"
+"Mod+7" = "workspace-switch 7"
+"Mod+8" = "workspace-switch 8"
+"Mod+9" = "workspace-switch 9"
 
 # Move window to workspace
-"Mod+Shift+1" = "window-move-to-workspace:1"
-"Mod+Shift+2" = "window-move-to-workspace:2"
-"Mod+Shift+3" = "window-move-to-workspace:3"
-"Mod+Shift+4" = "window-move-to-workspace:4"
-"Mod+Shift+5" = "window-move-to-workspace:5"
-"Mod+Shift+6" = "window-move-to-workspace:6"
-"Mod+Shift+7" = "window-move-to-workspace:7"
-"Mod+Shift+8" = "window-move-to-workspace:8"
-"Mod+Shift+9" = "window-move-to-workspace:9"
+"Mod+Shift+1" = "window-move-to-workspace 1"
+"Mod+Shift+2" = "window-move-to-workspace 2"
+"Mod+Shift+3" = "window-move-to-workspace 3"
+"Mod+Shift+4" = "window-move-to-workspace 4"
+"Mod+Shift+5" = "window-move-to-workspace 5"
+"Mod+Shift+6" = "window-move-to-workspace 6"
+"Mod+Shift+7" = "window-move-to-workspace 7"
+"Mod+Shift+8" = "window-move-to-workspace 8"
+"Mod+Shift+9" = "window-move-to-workspace 9"
