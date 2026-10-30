@@ -5,6 +5,7 @@
 format = """
 $hostname\
 $directory\
+$custom\
 $git_branch\
 $git_status\
 $fill\
