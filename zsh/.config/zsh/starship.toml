@@ -3,7 +3,7 @@
 
 # Prompt Format
 format = """
-$hostname\
+$os\
 $directory\
 $custom\
 $git_branch\
@@ -41,6 +41,7 @@ format = "[$symbol]($style) "
 
 [os.symbols]
 Alpine = " "
+Bazzite = " "
 Arch = " "
 CentOS = " "
 Debian = " "
