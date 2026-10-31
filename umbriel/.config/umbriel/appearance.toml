@@ -79,7 +79,7 @@ curve = "snappy"
 [animation.overview]
 enabled = true
 curve = "easeout"
-workspace_curve = "snappy"
+workspace_curve = "easeout"
 
 # ------------------------------------------------------------------------------
 # Scratchpad
