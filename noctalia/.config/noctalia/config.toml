@@ -111,6 +111,12 @@ temperature_night = 3600 # Kelvin
 
 ## Shell
 [shell]
+button_borders        = false            # draw outlines around buttons throughout the shell
+card_borders          = false            # draw outlines around section cards inside panels and settings
+input_borders         = true            # draw outlines around text fields and other inputs
+popup_borders         = true            # draw outlines around popups and dropdowns (dialogs always have outlines)
+show_close_buttons    = false
+popup_shadows         = false
 clipboard_auto_paste = "auto"          # off | auto | ctrl_v | ctrl_shift_v | shift_insert
 clipboard_confirm_clear_history = true
 clipboard_enabled = true
