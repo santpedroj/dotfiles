@@ -32,7 +32,7 @@
     },
     {
       "type": "packages",
-      "format": "{rpm} (rpm), {flatpak-all} (flatpak), {brew-all} (brew)",
+      "format": "{pacman} (pacman), {flatpak-all} (flatpak), {brew-all} (brew)",
       "key": " ",
       "keyColor": "33",
     },
