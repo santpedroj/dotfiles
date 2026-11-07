@@ -4,9 +4,6 @@ package.path = package.path .. ";" .. home .. "/.config/hypr/?.lua" .. ";" .. ho
 
 -- Hyprland Configuration
 
--- Layout
-require("modules.scrolling")
-
 -- Bindings
 require("./modules/bindings/*")
 
