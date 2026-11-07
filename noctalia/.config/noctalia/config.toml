@@ -15,6 +15,7 @@ builtin_ids              = [
   "gtk3",
   "gtk4",
   "qt",
+  "hyprland",
   "umbriel",
 ]        # opt-in; run: noctalia theme --list-templates
 
