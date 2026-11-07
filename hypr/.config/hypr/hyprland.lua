@@ -8,7 +8,7 @@ package.path = package.path .. ";" .. home .. "/.config/hypr/?.lua" .. ";" .. ho
 require("./modules/bindings/*")
 
 -- Rules
-require("./modules/windowrules/*")
+require("./modules/window-rules.lua")
 
 -- Animations
 require("modules.animations.pro")
