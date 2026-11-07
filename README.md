@@ -17,13 +17,11 @@ The recommended way to install these dotfiles is using GNU Stow. This method cre
    stow .
    ```
 
-3. **Install specific configurations only:**
+3. **Stow files to a specific path:**
 
    ```bash
-   # Install only specific configs (replace with desired configs)
-   stow -t=$HOME .config/nvim
-   stow -t=$HOME .config/hypr
-   stow -t=$HOME .emacs.d
+   # Symlink files to a specific path
+   stow --target path/to/target_directory path/to/file_or_directory1 path/to/file_or_directory2
    ```
 
 4. **Remove/uninstall configurations:**
@@ -32,6 +30,6 @@ The recommended way to install these dotfiles is using GNU Stow. This method cre
    stow -d .
 
    # Remove specific configurations
-   stow -d .config/nvim
+   stow -d nvim
 
    ```
