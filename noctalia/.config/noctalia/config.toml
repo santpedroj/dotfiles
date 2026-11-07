@@ -186,7 +186,7 @@ show_cursor = true
 ## Wallpapers
 [wallpaper]
 # Directory browsed by the wallpaper picker panel
-directory = "~/dotfiles/backgrounds/"
+directory = "~/dotfiles/wallpapers/"
 edge_smoothness = 0.3                                                 # 0.0 – 1.0
 enabled = true
 fill_color = "#111111"                                                # optional fallback/fill color; image wallpapers take priority
