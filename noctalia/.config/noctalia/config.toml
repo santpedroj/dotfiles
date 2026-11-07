@@ -9,6 +9,15 @@ community_palette = "Gruvbox Material Medium"   # community palette name when so
 pure_black_dark   = false         # replace dark-mode backgrounds with pure black
 sync_color_scheme = true          # sync the GNOME color-scheme preference with mode
 
+[theme.templates]
+enable_builtin_templates = true
+builtin_ids              = [
+  "gtk3",
+  "gtk4",
+  "qt",
+  "umbriel",
+]        # opt-in; run: noctalia theme --list-templates
+
 ## Bar
 [bar]
 order = ["main"] # layer-shell creation order
