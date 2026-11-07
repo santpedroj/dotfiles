@@ -4,8 +4,8 @@ hl.config({
 	general = {
 		layout = "scrolling",
 		gaps_in = 5,
-		gaps_out = 10,
-		border_size = 3,
+		gaps_out = 6,
+		border_size = 2,
 		extend_border_grab_area = 10,
 		resize_on_border = true,
 
