@@ -101,7 +101,7 @@ enable_notification_sounds = true   # sound on notifications
 enable_power_sounds        = true   # sound on charger connect/disconnect
 enable_screenshot_sounds   = false   # sound on screenshots
 sound_volume               = 1.0 # global sound volume (0.0 - 1.0)
-sound_theme                = "ocean"
+sound_theme                = "freedesktop" # "ocean" is a option in bazzite
 
 [brightness]
 enable_ddcutil = false
