@@ -1,5 +1,5 @@
--- centered apps
-local centeredApps = "^(org.gnome.FileRoller|nwg-look|qt6ct|xdg-desktop-portal-gtk)$"
+-- Centered apps
+local centeredApps = "^(org.gnome.FileRoller|xarchiver|nwg-look|qt6ct|xdg-desktop-portal-gtk)$"
 
 hl.window_rule({ match = { float = true }, move = "50% 50%" })
 hl.window_rule({
@@ -9,7 +9,7 @@ hl.window_rule({
 	size = { 700, 450 },
 })
 
--- noctalia nettings
+-- Noctalia nettings
 hl.window_rule({
 	name = "floating-noctalia-settings",
 	match = { initial_class = [[^dev\.noctalia\.Noctalia$]] },
@@ -18,31 +18,24 @@ hl.window_rule({
 	size = { "monitor_w * 0.8", "monitor_h * 0.8" },
 })
 
-hl.window_rule({
-	name = "floating-noctalia-settings",
-	match = { initial_class = [[^dev\.noctalia\.Noctalia$]] },
-	float = true,
-	center = true,
-	size = { "monitor_w * 0.9", "monitor_h * 0.9" },
-})
-
--- pinentry and mpv
+-- Pinentry and mpv
 hl.window_rule({
 	name = "floating-simple",
 	match = { initial_class = "^(Pinentry-gtk|mpv)$" },
 	float = true,
+	size = { "monitor_w * 0.8", "monitor_h * 0.8" },
 })
 
--- localsend
+-- Localsend
 hl.window_rule({
 	name = "floating-localsend",
-	match = { initial_class = [[^org\.localsend\.localsend_app)$]] },
+	match = { initial_class = "org.localsend.localsend_app" },
 	float = true,
 	center = true,
-	size = { "monitor_w * 0.3", "monitor_h * 0.7" },
+	size = { "monitor_w * 0.5", "monitor_h * 0.7" },
 })
 
--- picture-in-picture
+-- Picture-in-picture
 hl.window_rule({
 	match = { title = "^([Pp]icture[-\\s]?[Ii]n[-\\s]?[Pp]icture)(.*)$" },
 	float = true,
@@ -52,7 +45,7 @@ hl.window_rule({
 	pin = true,
 })
 
--- file manager
+-- File manager
 -- File Roller
 hl.window_rule({
 	name = "floating-filerroller-extract",
@@ -61,31 +54,11 @@ hl.window_rule({
 })
 
 -- Thunar
--- 1. Every Thunar window (dialogs): small, floating, centered
-hl.window_rule({
-	name = "thunar-dialogs",
-	match = { class = "^(thunar)$" },
-	float = true,
-	center = true,
-	size = { "monitor_w * 0.4", "monitor_h * 0.5" },
-})
-
--- 2. Main window only (title ends in "Thunar"): big, overrides the size above
-hl.window_rule({
-	name = "thunar-main",
-	match = { class = "^(thunar)$", title = "^(.*Thunar)$" },
-	float = true,
-	center = true,
-	size = { "monitor_w * 0.7", "monitor_h * 0.9" },
-})
-
--- 3. Rename dialog: even smaller, since it's just one text field
 hl.window_rule({
 	name = "thunar-rename",
 	match = { class = "^(thunar)$", title = "^(Rename).*" },
 	float = true,
 	center = true,
-	size = { "monitor_w * 0.25", "monitor_h * 0.2" },
 })
 
 -- Ignore maximize requests from all apps. You'll probably like this.
