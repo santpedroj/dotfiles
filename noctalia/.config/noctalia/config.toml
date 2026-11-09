@@ -56,7 +56,7 @@ end = [
 # Bar Font
 font_family = ""         # typeface for this bar's widgets; empty inherits the global font
 font_scale = 1.1
-font_weight = 500        # CSS weight 100–1000 (e.g. 400 regular, 700 bold); primary label weight for bar widgets
+font_weight = 600        # CSS weight 100–1000 (e.g. 400 regular, 700 bold); primary label weight for bar widgets
 hover_highlight = true   # softly tint the widget under the mouse pointer with its foreground color
 layer = "top"            # top | overlay; overlay appears above fullscreen apps
 margin_edge = 0          # distance from the nearest screen edge (positive values float the bar)
@@ -136,6 +136,7 @@ clipboard_keep_from_closed_apps = true # keep the live selection after its sourc
 launch_apps_as_systemd_services = true # launch apps as transient systemd services (needs Noctalia to be a user unit)
 polkit_agent = true           # register Noctalia's native polkit authentication agent
 telemetry_enabled = false
+shared_gl_context = true
 
 [shell.launcher]
 layout = "simple" # full | simple
