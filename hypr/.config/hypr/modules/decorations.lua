@@ -56,7 +56,7 @@ hl.config({
 
 	decoration = {
 		--dim_special = 0.3,
-		rounding = 0,
+		rounding = 6,
 
 		shadow = {
 			enabled = false,
