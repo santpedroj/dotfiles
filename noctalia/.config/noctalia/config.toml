@@ -121,7 +121,7 @@ temperature_night = 3600 # Kelvin
 
 ## Shell
 [shell]
-corner_radius_scale = 0
+corner_radius_scale = 1.0
 button_borders        = true            # draw outlines around buttons throughout the shell
 card_borders          = true            # draw outlines around section cards inside panels and settings
 input_borders         = true            # draw outlines around text fields and other inputs
