@@ -50,7 +50,6 @@ end = [
   "volume",
   "brightness",
   "battery",
-  "clock",
   "control-center",
 ]
 
