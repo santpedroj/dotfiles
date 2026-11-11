@@ -19,6 +19,10 @@ builtin_ids              = [
   "umbriel",
 ]        # opt-in; run: noctalia theme --list-templates
 
+[acessibility]
+ui_scale = 1.15
+high_contrast = false
+
 ## Bar
 [bar]
 order = ["main"] # layer-shell creation order
