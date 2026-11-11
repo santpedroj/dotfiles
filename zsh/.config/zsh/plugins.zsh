@@ -23,9 +23,12 @@ zplugin-update() {
   done
 }
 
-_zplugin_load zsh-users zsh-autosuggestions
-_zplugin_load zsh-users zsh-history-substring-search
-_zplugin_load jeffreytse zsh-vi-mode
+#_zplugin_load zsh-users zsh-autosuggestions
+#_zplugin_load zsh-users zsh-history-substring-search
+#_zplugin_load jeffreytse zsh-vi-mode
+source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/linuxbrew/.linuxbrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /home/linuxbrew/.linuxbrew/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 eval "$(/home/linuxbrew/.linuxbrew/bin/zsh-patina activate)"
 
 #if [[ -r "$HOME/.local/share/deja/init.zsh" ]]; then
