@@ -30,18 +30,27 @@ match.is_alone = true
 default_maximize = true
 
 # File_manager
+
+
+# File manager
+
+# Main Thunar window
 [[window_rule]]
-match.app_id = "^dolphin$"
+match.app_id = "^thunar$"
 match.is_alone = true
 default_maximize = true
 
+# Thunar Rename dialog
 [[window_rule]]
-match.app_id = "^dolphin$"
-match.title = "^Rename "
+match.app_id = "^thunar$"
+match.title = '^Rename ".*"$'
+attach_to_parent = false
 default_floating = true
+default_focused = true
 
+# Dedicated floating Thunar
 [[window_rule]]
-match.app_id = "^dfr[.]floating[.]dolphin$"
+match.app_id = "^dfr[.]floating[.]thunar$"
 default_floating = true
 default_floating_size = { width = 0.33, height = 0.5 }
 
