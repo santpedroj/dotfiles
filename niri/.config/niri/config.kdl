@@ -14,9 +14,7 @@ include "cfg/env.kdl"
 
 spawn-at-startup "kanshi"
 spawn-at-startup "noctalia"
-spawn-at-startup "fcitx5 -d"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-
 
 include "noctalia.kdl"
