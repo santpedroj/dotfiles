@@ -52,7 +52,6 @@ end = [
   "network",
   "bluetooth",
   "volume",
-  "brightness",
   "battery",
   "control-center",
 ]
@@ -236,6 +235,11 @@ type = "battery"
 display_mode = "glyph"
 hide_when_plugged = true
 show_label = true
+
+[widget.brightness]
+show_glyph = true
+show_label = false
+show_when_unavailable = true
 
 [widget.bluetooth]
 hide_when_no_connected_device = true
