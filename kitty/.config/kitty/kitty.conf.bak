@@ -25,6 +25,7 @@ cursor_blink_interval 0
 cursor_trail 3
 cursor_trail_decay 0.05 0.2
 cursor_trail_start_threshold 2
+custom_shaders cursor-trail-motion-blur
 
 #: Performance tuning
 repaint_delay 2
@@ -59,7 +60,9 @@ map shift+down move_window down
 map shift+left move_window left
 map shift+right move_window right
 
+
+
 # BEGIN_KITTY_THEME
-# Jellybeans
+# Kanagawa_dragon
 include current-theme.conf
 # END_KITTY_THEME
