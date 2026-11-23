@@ -20,7 +20,7 @@ builtin_ids              = [
 ]        # opt-in; run: noctalia theme --list-templates
 
 [acessibility]
-ui_scale = 1.15
+ui_scale = 1.10
 high_contrast = false
 
 ## Bar
