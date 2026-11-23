@@ -57,9 +57,9 @@ end = [
 ]
 
 # Bar Font
-font_family = "Rubik"         # typeface for this bar's widgets; empty inherits the global font
+font_family = "Inter"         # typeface for this bar's widgets; empty inherits the global font
 font_scale = 1.1
-font_weight = 600        # CSS weight 100–1000 (e.g. 400 regular, 700 bold); primary label weight for bar widgets
+font_weight = 700        # CSS weight 100–1000 (e.g. 400 regular, 700 bold); primary label weight for bar widgets
 hover_highlight = true   # softly tint the widget under the mouse pointer with its foreground color
 layer = "top"            # top | overlay; overlay appears above fullscreen apps
 margin_edge = 0          # distance from the nearest screen edge (positive values float the bar)
@@ -124,7 +124,7 @@ temperature_night = 3600 # Kelvin
 
 ## Shell
 [shell]
-font_family = "Rubik"
+font_family = "Inter"
 corner_radius_scale = 1.0
 button_borders        = true            # draw outlines around buttons throughout the shell
 card_borders          = true            # draw outlines around section cards inside panels and settings
