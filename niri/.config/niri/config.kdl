@@ -1,10 +1,5 @@
-
-// bindings
-include "bindings/apps.kdl"
-include "bindings/noct-calls.kdl"
-include "bindings/tiling.kdl"
-
-// general settings
+// settings
+include "cfg/bindings.kdl"
 include "cfg/input.kdl"
 include "cfg/outputs.kdl"
 include "cfg/appearance.kdl"
