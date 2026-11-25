@@ -30,7 +30,7 @@ hl.config({
 			enabled = true,
 			font_family = "JetBrainsMono Nerd Font",
 			font_size = 16,
-			font_weight_active = "ultraheavy",
+			font_weight_active = "bold",
 			font_weight_inactive = "normal",
 			indicator_height = 1,
 			indicator_gap = 0,
