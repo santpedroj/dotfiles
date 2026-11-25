@@ -63,16 +63,16 @@ video/3gpp=mpv.desktop;
 video/divx=mpv.desktop;
 video/vnd.avi=mpv.desktop;
 
-image/avif=org.gnome.Loupe;
-image/bmp=org.gnome.Loupe;
-image/gif=org.gnome.Loupe;
-image/heic=org.gnome.Loupe;
-image/heif=org.gnome.Loupe;
-image/jpeg=org.gnome.Loupe;
-image/png=org.gnome.Loupe;
-image/svg+xml=org.gnome.Loupe;
-image/tiff=org.gnome.Loupe;
-image/webp=org.gnome.Loupe;
+image/avif=org.gnome.Loupe.desktop;
+image/bmp=org.gnome.Loupe.desktop;
+image/gif=org.gnome.Loupe.desktop;
+image/heic=org.gnome.Loupe.desktop;
+image/heif=org.gnome.Loupe.desktop;
+image/jpeg=org.gnome.Loupe.desktop;
+image/png=org.gnome.Loupe.desktop;
+image/svg+xml=org.gnome.Loupe.desktop;
+image/tiff=org.gnome.Loupe.desktop;
+image/webp=org.gnome.Loupe.desktop;
 
 application/javascript=nvim.desktop;
 application/json=nvim.desktop;
