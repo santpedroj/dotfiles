@@ -53,14 +53,6 @@ hl.window_rule({
 	float = true,
 })
 
--- Thunar
-hl.window_rule({
-	name = "thunar-rename",
-	match = { class = "^(thunar)$", title = "^(Rename).*" },
-	float = true,
-	center = true,
-})
-
 -- Ignore maximize requests from all apps. You'll probably like this.
 local suppressMaximizeRule = hl.window_rule({
 	name = "suppress-maximize-events",
