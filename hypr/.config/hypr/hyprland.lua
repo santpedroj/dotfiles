@@ -14,9 +14,9 @@ require("./modules/window-rules.lua")
 require("modules.animations.pro")
 
 -- General
+require("modules.appearance")
 require("modules.autostart")
 require("modules.colors")
-require("modules.decorations")
 require("modules.env")
 require("modules.input")
 require("modules.misc")
