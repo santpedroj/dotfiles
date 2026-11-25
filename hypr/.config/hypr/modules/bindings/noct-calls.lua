@@ -12,7 +12,7 @@ hl.bind("SUPER + Space", hl.dsp.exec_cmd(noct .. "panel-toggle launcher"))
 hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd(noct .. "panel-toggle wallpaper"))
 hl.bind("SUPER + V", hl.dsp.exec_cmd(noct .. "panel-toggle clipboard"))
 
-hl.bind("CTRL + SHIFT + S", hl.dsp.exec_cmd(noct .. "screenshot-region"))
+hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd(noct .. "screenshot-region"))
 
 -- Nightlight
 hl.bind("SUPER + N", hl.dsp.exec_cmd(noct .. "nightlight-enable"))
