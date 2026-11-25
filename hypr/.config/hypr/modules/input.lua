@@ -17,6 +17,12 @@ hl.config({
 
 		hl.bind("SUPER + S", hl.dsp.exec_cmd("hyprctl switchxkblayout current next")),
 	},
+
+	cursor = {
+		hide_on_key_press = true,
+		warp_on_change_workspace = 1,
+		no_hardware_cursors = true,
+	},
 })
 
 -- Touchpad gestures
