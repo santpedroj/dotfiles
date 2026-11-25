@@ -11,6 +11,10 @@ hl.config({
 		force_default_wallpaper = 0,
 	},
 
+	render = {
+		cm_auto_hdr = 0,
+	},
+
 	xwayland = {
 		force_zero_scaling = true,
 	},
