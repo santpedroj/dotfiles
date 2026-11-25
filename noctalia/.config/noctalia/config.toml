@@ -118,8 +118,8 @@ auto_locate = false    # resolve coordinates from your IP address when true
 [nightlight]
 enabled = true
 force = true   # hold night temperature, ignoring the schedule
-temperature_day = 3700   # Kelvin (must be > temperature_night by at least 100)
-temperature_night = 3600 # Kelvin
+temperature_day = 4100#3700   # Kelvin (must be > temperature_night by at least 100)
+temperature_night = 4000#3600 # Kelvin
 
 
 ## Shell
