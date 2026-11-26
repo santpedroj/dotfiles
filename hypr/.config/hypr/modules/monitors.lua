@@ -1,4 +1,4 @@
--- Montior wiki https://wiki.hypr.land/Configuring/Basics/Monitors/
+-- Monitor wiki https://wiki.hypr.land/Configuring/Basics/Monitors/
 
 hl.monitor({
 	output = "HDMI-A-1",
