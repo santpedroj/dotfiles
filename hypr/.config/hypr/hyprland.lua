@@ -11,7 +11,7 @@ require("./modules/bindings/*")
 require("./modules/window-rules.lua")
 
 -- Animations
-require("modules.animations.pro")
+require("modules.animations.default")
 
 -- General
 require("modules.appearance")
