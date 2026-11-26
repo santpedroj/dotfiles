@@ -29,30 +29,12 @@ match.app_id = "brave-origin"
 match.is_alone = true
 default_maximize = true
 
-# File_manager
-
-
 # File manager
-
-# Main Thunar window
-[[window_rule]]
-match.app_id = "^thunar$"
-match.is_alone = true
-default_maximize = true
-
-# Thunar Rename dialog
-[[window_rule]]
-match.app_id = "^thunar$"
-match.title = '^Rename ".*"$'
-attach_to_parent = false
-default_floating = true
-default_focused = true
-
-# Dedicated floating Thunar
-[[window_rule]]
-match.app_id = "^dfr[.]floating[.]thunar$"
-default_floating = true
-default_floating_size = { width = 0.33, height = 0.5 }
+# Dedicated floating Nautilus
+#[[window_rule]]
+#match.app_id = "^org[.]gnome[.]Nautilus$"
+#default_floating = true
+#default_floating_size = { width = 0.5, height = 0.8 }
 
 # ==============================================================================
 # Noctalia
